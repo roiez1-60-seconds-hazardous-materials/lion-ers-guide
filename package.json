@@ -1,0 +1,8 @@
+{
+  "name": "lion-ers-guide",
+  "version": "1.0.0",
+  "description": "מדריך אינטראקטיבי לחליפת התערבות מהירה LION ERS - כבאות והצלה לישראל",
+  "scripts": {
+    "start": "npx serve public"
+  }
+}
