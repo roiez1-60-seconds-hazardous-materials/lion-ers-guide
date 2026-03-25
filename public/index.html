@@ -89,13 +89,8 @@ nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrol
 .sim-dot{width:10px;height:10px;border-radius:50%;background:var(--warm-200);transition:all .3s}.sim-dot.active{background:var(--blue);transform:scale(1.3)}.sim-dot.done{background:var(--green)}
 
 /* INTERACTIVE SUIT */
-.suit-viewer{position:relative;max-width:500px;margin:0 auto;text-align:center}
-.suit-viewer img{width:100%;border-radius:var(--radius)}
-.suit-hotspot{position:absolute;width:38px;height:38px;border-radius:50%;background:transparent;border:3px solid var(--fire);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:transparent;transition:all .3s;animation:glow 2s infinite;transform:translate(-50%,-50%)}
-.suit-hotspot:hover{transform:translate(-50%,-50%) scale(1.3);background:rgba(192,57,43,.2);border-width:3px}
-.suit-hotspot::after{content:'+';color:var(--fire);font-size:18px;font-weight:900;opacity:.7}
-.suit-tooltip{position:absolute;background:var(--charcoal);color:#fff;padding:12px 16px;border-radius:10px;font-size:13px;max-width:250px;z-index:10;box-shadow:var(--shadow-lg);pointer-events:none;opacity:0;transition:opacity .2s;line-height:1.6}
-.suit-tooltip.show{opacity:1}
+.suit-zone{position:absolute;cursor:pointer;border:2px solid transparent;border-radius:8px;transition:all .3s}
+.suit-zone:hover{background:rgba(192,57,43,.1);border-color:rgba(192,57,43,.4)}
 .suit-tooltip h5{font-size:14px;margin-bottom:4px;color:var(--amber-border)}
 
 /* QUIZ */
@@ -135,15 +130,23 @@ nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrol
 <section id="components"><div class="sec-header reveal"><h2>רכיבי הערכה</h2><p>לחצו על כל רכיב בתמונה לפרטים נוספים</p></div>
 <div style="position:relative;max-width:500px;margin:0 auto" class="reveal">
 <img src="images/suit-components.png" alt="רכיבי חליפה" style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lg);display:block">
-<div class="suit-hotspot" style="top:35%;left:68%" onclick="showComp(0)"></div>
-<div class="suit-hotspot" style="top:27%;left:20%" onclick="showComp(1)"></div>
-<div class="suit-hotspot" style="top:44%;left:20%" onclick="showComp(2)"></div>
-<div class="suit-hotspot" style="top:60%;left:38%" onclick="showComp(3)"></div>
-<div class="suit-hotspot" style="top:72%;left:42%" onclick="showComp(4)"></div>
-<div class="suit-hotspot" style="top:60%;left:22%" onclick="showComp(3)"></div>
-<div class="suit-hotspot" style="top:86%;left:68%" onclick="showComp(5)"></div>
+<!-- חליפה - הדמות בצד ימין של התמונה -->
+<div class="suit-zone" style="top:14%;left:48%;width:42%;height:43%" onclick="showComp(0)"></div>
+<!-- כפפה פנימית GORE - צד שמאל למעלה -->
+<div class="suit-zone" style="top:20%;left:5%;width:32%;height:15%" onclick="showComp(1)"></div>
+<!-- כפפה חיצונית ANSELL - צד שמאל אמצע -->
+<div class="suit-zone" style="top:37%;left:5%;width:32%;height:15%" onclick="showComp(2)"></div>
+<!-- מנ"פ ומסיכה - אמצע -->
+<div class="suit-zone" style="top:54%;left:15%;width:55%;height:14%" onclick="showComp(3)"></div>
+<!-- קסדה - מתחת למנ"פ -->
+<div class="suit-zone" style="top:68%;left:28%;width:30%;height:10%" onclick="showComp(4)"></div>
+<!-- מגפיים - למטה -->
+<div class="suit-zone" style="top:79%;left:45%;width:35%;height:12%" onclick="showComp(5)"></div>
+<!-- בגד עבודה - תחתית -->
+<div class="suit-zone" style="top:92%;left:10%;width:80%;height:7%" onclick="showComp(6)"></div>
 </div>
-<div class="comp-grid reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:20px" id="compBtns"></div>
+<p style="text-align:center;color:var(--warm-300);font-size:12px;margin-top:8px">💡 לחץ על כל רכיב בתמונה לפרטים</p>
+<div class="comp-grid reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:16px" id="compBtns"></div>
 <div id="compDetail" class="card" style="display:none;margin-top:16px;border-color:var(--fire-border);animation:slideIn .3s ease"><div class="card-header"><div class="card-icon" style="background:var(--fire-bg)" id="compIcon"></div><div class="card-title" id="compTitle"></div></div><div class="card-text" id="compText"></div></div>
 <div class="alert alert-warning reveal" style="margin-top:24px"><h4>⚠️ שימו לב</h4><ul><li>אין מסיכה עם קליפס — רק רצועות</li><li>חובה שני סוגי כפפות</li><li>הסירו תכשיטים ופריטים אישיים</li></ul></div></section>
 
