@@ -91,7 +91,7 @@ nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrol
 /* INTERACTIVE SUIT */
 .suit-viewer{position:relative;max-width:500px;margin:0 auto;text-align:center}
 .suit-viewer img{width:100%;border-radius:var(--radius)}
-.suit-hotspot{position:absolute;width:36px;height:36px;border-radius:50%;background:rgba(192,57,43,.85);border:2px solid #fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;transition:all .3s;animation:glow 2s infinite;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.suit-hotspot{position:absolute;width:30px;height:30px;border-radius:50%;background:rgba(192,57,43,.85);border:2px solid #fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;transition:all .3s;animation:glow 2s infinite;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .suit-hotspot:hover{transform:scale(1.2);background:rgba(192,57,43,1)}
 .suit-tooltip{position:absolute;background:var(--charcoal);color:#fff;padding:12px 16px;border-radius:10px;font-size:13px;max-width:250px;z-index:10;box-shadow:var(--shadow-lg);pointer-events:none;opacity:0;transition:opacity .2s;line-height:1.6}
 .suit-tooltip.show{opacity:1}
@@ -123,13 +123,13 @@ nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}nav::-webkit-scrol
 <!-- COMPONENTS - Interactive Suit -->
 <section id="components"><div class="sec-header reveal"><h2>רכיבי הערכה</h2><p>לחצו על כל רכיב בתמונה לפרטים נוספים</p></div>
 <div class="suit-viewer reveal" id="suitViewer"><img src="images/suit-components.png" alt="רכיבי חליפה">
-<div class="suit-hotspot" style="top:22%;right:63%" onclick="showHotspot(this,'חליפת LION ERS','הגנה כימית מפני אדים, גזים והתזה. כוללת ברדס, גרביים פנימיות ורוכסן עם כיסוי.')">1</div>
-<div class="suit-hotspot" style="top:30%;right:10%" onclick="showHotspot(this,'כפפה פנימית GORE CHEMPAK G94-C3L','כפפה פנימית תפורה לחליפה. מספקת הגנה כימית.')">2</div>
-<div class="suit-hotspot" style="top:44%;right:10%" onclick="showHotspot(this,'כפפה חיצונית ANSELL HyFlex 11-801','כפפה חיצונית להגנה מכנית. נלבשת מעל הכפפה הפנימית.')">3</div>
-<div class="suit-hotspot" style="top:58%;right:35%" onclick="showHotspot(this,'מנ&quot;פ ומסיכת מנ&quot;פ','מערכת נשימה פתוחה עם גליל אוויר מלא. מסיכה עם רצועות בלבד — אין קליפס!')">4</div>
-<div class="suit-hotspot" style="top:70%;right:42%" onclick="showHotspot(this,'קסדה תקנית','כולל רצועת אבטחה. נלבשת אחרונה בתהליך ההתמגנות.')">5</div>
-<div class="suit-hotspot" style="top:83%;right:62%" onclick="showHotspot(this,'מגפי כבאים תקניות','קצוות המכנס מושחלים מעליהם (הרעפה).')">6</div>
-<div class="suit-hotspot" style="top:94%;right:40%" onclick="showHotspot(this,'בגד עבודה','חולצה שרוול קצר מבד נושם ומכנסיים ארוכים. נלבש מתחת לחליפה.')">7</div>
+<div class="suit-hotspot" style="top:28%;right:72%" onclick="showHotspot(this,'חליפת LION ERS','הגנה כימית מפני אדים, גזים והתזה. כוללת ברדס, גרביים פנימיות ורוכסן עם כיסוי.')">1</div>
+<div class="suit-hotspot" style="top:25%;right:22%" onclick="showHotspot(this,'כפפה פנימית GORE CHEMPAK G94-C3L','כפפה פנימית תפורה לחליפה. מספקת הגנה כימית.')">2</div>
+<div class="suit-hotspot" style="top:42%;right:22%" onclick="showHotspot(this,'כפפה חיצונית ANSELL HyFlex 11-801','כפפה חיצונית להגנה מכנית. נלבשת מעל הכפפה הפנימית.')">3</div>
+<div class="suit-hotspot" style="top:60%;right:55%" onclick="showHotspot(this,'מנ&quot;פ ומסיכת מנ&quot;פ','מערכת נשימה פתוחה עם גליל אוויר מלא. מסיכה עם רצועות בלבד — אין קליפס!')">4</div>
+<div class="suit-hotspot" style="top:72%;right:50%" onclick="showHotspot(this,'קסדה תקנית','כולל רצועת אבטחה. נלבשת אחרונה בתהליך ההתמגנות.')">5</div>
+<div class="suit-hotspot" style="top:85%;right:72%" onclick="showHotspot(this,'מגפי כבאים תקניות','קצוות המכנס מושחלים מעליהם (הרעפה).')">6</div>
+<div class="suit-hotspot" style="top:95%;right:50%" onclick="showHotspot(this,'בגד עבודה','חולצה שרוול קצר מבד נושם ומכנסיים ארוכים. נלבש מתחת לחליפה.')">7</div>
 </div>
 <div id="hotspotInfo" class="card" style="display:none;margin-top:16px;border-color:var(--fire-border)"><div class="card-header"><div class="card-icon" style="background:var(--fire-bg)" id="hsIcon">🧥</div><div class="card-title" id="hsTitle"></div></div><div class="card-text" id="hsText"></div></div>
 <div class="alert alert-warning reveal" style="margin-top:24px"><h4>⚠️ שימו לב</h4><ul><li>אין מסיכה עם קליפס — רק רצועות</li><li>חובה שני סוגי כפפות</li><li>הסירו תכשיטים ופריטים אישיים</li></ul></div></section>
