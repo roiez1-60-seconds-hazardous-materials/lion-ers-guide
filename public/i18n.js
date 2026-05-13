@@ -8,9 +8,17 @@
 // --- Inject CSS ---
 const css=document.createElement('style');
 css.textContent=`
-.lang-sw{display:flex;gap:3px;flex-shrink:0;margin:0 8px}
-.lang-sw button{padding:4px 8px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid #EDEBE7;background:#F7F5F2;color:#7A7267;transition:all .2s;font-family:inherit}
+.lang-sw{display:flex;gap:3px;flex-shrink:0}
+.lang-sw button{padding:3px 6px;border-radius:5px;font-size:10px;font-weight:700;cursor:pointer;border:1px solid #EDEBE7;background:#F7F5F2;color:#7A7267;transition:all .2s;font-family:inherit}
 .lang-sw button.active{background:rgba(192,57,43,.08);border-color:rgba(192,57,43,.2);color:#C0392B}
+.header{height:52px!important;padding:0 12px!important}
+.logo-sub{display:none!important}
+.logo-mark{width:30px!important;height:30px!important;font-size:14px!important}
+.logo-text{font-size:14px!important}
+#nav a{padding:6px 8px!important;font-size:11px!important}
+.main{margin-top:55px!important}
+.progress-wrap{top:52px!important}
+@media(max-width:768px){.header{gap:4px!important}nav.open{top:52px!important}}
 `;
 document.head.appendChild(css);
 
@@ -217,7 +225,7 @@ function setLang(lang){
   });
   
   // DONNING TABS
-  document.querySelectorAll('#donning > .tabs .tab-btn').forEach((b,i)=>{if(T.don_tabs[L][i])b.textContent=T.don_tabs[L][i]});
+  document.querySelectorAll('#donning .tabs .tab-btn').forEach((b,i)=>{if(T.don_tabs[L][i])b.textContent=T.don_tabs[L][i]});
   
   // DONNING TIMER
   const donSec=document.getElementById('donning');
@@ -272,12 +280,12 @@ function setLang(lang){
   if(typeof simScenes!=='undefined')window.simScenes=T.simScenes[L];
   
   // MAINTENANCE TABS
-  document.querySelectorAll('#maintenance > .tabs .tab-btn').forEach((b,i)=>{if(T.maint_tabs[L][i])b.textContent=T.maint_tabs[L][i]});
+  document.querySelectorAll('#maintenance .tabs .tab-btn').forEach((b,i)=>{if(T.maint_tabs[L][i])b.textContent=T.maint_tabs[L][i]});
   
   // QUIZ SECTION
   const quizSec=document.getElementById('quiz');
   if(quizSec){
-    quizSec.querySelectorAll(':scope > .tabs .tab-btn').forEach((b,i)=>{if(T.quiz_tabs[L][i])b.textContent=T.quiz_tabs[L][i]});
+    quizSec.querySelectorAll('.tabs .tab-btn').forEach((b,i)=>{if(T.quiz_tabs[L][i])b.textContent=T.quiz_tabs[L][i]});
     quizSec.querySelectorAll('.score-label').forEach((el,i)=>{el.textContent=T.score_labels[L][i]});
     const nb=document.getElementById('quizNext');if(nb)nb.textContent=T.quiz_btns[L][0];
     const rb=document.getElementById('quizRestart');if(rb)rb.textContent=T.quiz_btns[L][1];
