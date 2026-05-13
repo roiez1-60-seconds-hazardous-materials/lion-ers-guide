@@ -284,12 +284,22 @@ function setLang(lang){
     if(typeof initDots==='function'){initDots('don');initDots('doff')}
   }
   
-  // DECISION TREE — override globals
-  if(typeof dtTree!=='undefined')window.dtTree=T.dtTree[L];
-  if(typeof dtResults!=='undefined')window.dtResults=T.dtResults[L];
+  // DECISION TREE — override globals + re-render
+  dtTree=T.dtTree[L];
+  dtResults=T.dtResults[L];
+  try{if(dtStarted)renderDT(0)}catch(e){}
   
-  // SIMULATION — override global
-  if(typeof simScenes!=='undefined')window.simScenes=T.simScenes[L];
+  // SIMULATION — override global + re-render
+  simScenes=T.simScenes[L];
+  try{if(simStarted){simStep=0;startSim()}}catch(e){}
+  
+  // QUIZ/FLASH/DRAG — override globals + reload
+  Qs=T.quizData[L];
+  flashData=T.flashData[L];
+  dragSteps=T.dragSteps[L];
+  try{cq=0;sc=0;ans=false;loadQ()}catch(e){}
+  try{initFlashcards()}catch(e){}
+  try{initDrag()}catch(e){}
   
   // MAINTENANCE TABS
   
@@ -306,16 +316,6 @@ function setLang(lang){
   }
   const dchk=document.querySelector('#don-check .card-title');
   if(dchk)dchk.textContent={he:'בדיקה סופית',en:'Final Check',zh:'最终检查'}[L];
-  
-  // Override quiz data
-  if(typeof Qs!=='undefined')window.Qs=T.quizData[L];
-  if(typeof flashData!=='undefined')window.flashData=T.flashData[L];
-  if(typeof dragSteps!=='undefined')window.dragSteps=T.dragSteps[L];
-  
-  // Reload dynamic content
-  try{if(typeof loadQ==='function'){cq=0;sc=0;ans=false;loadQ()}}catch(e){}
-  try{if(typeof initFlashcards==='function')initFlashcards()}catch(e){}
-  try{if(typeof initDrag==='function')initDrag()}catch(e){}
   
   // --- OVERVIEW CONTENT ---
   const ov=document.getElementById('overview');
