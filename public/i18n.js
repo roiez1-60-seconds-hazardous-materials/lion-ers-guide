@@ -95,26 +95,26 @@ en:{attack:{icon:'🔥',title:'Assault Suit & SCBA',desc:'Flammable — no rapid
 zh:{attack:{icon:'🔥',title:'进攻服+呼吸器',desc:'易燃 — 禁用快速干预！'},ers:{icon:'🛡️',title:'LION ERS快速干预',desc:'适用！开始穿戴。'},ers_wash:{icon:'🚿',title:'LION ERS',desc:'适用于洗消。'},ers_mon:{icon:'📡',title:'LION ERS',desc:'适用于监测。'},wait:{icon:'⏳',title:'等待信息',desc:'收集信息。'}}},
 // --- Simulation ---
 simScenes:{he:[
-{n:'🚨 דליפת חומצה גופרתית (1830) מכביש 4. רוח מערבית 15 קמ"ש. 3 נפגעים.',q:'פעולה ראשונה?',opts:[{t:'🏃 לרוץ להציל',c:false,f:'❌ בלי מיגון! קודם תמ"צ.'},{t:'📋 תמ"צ + מידע',c:true,f:'✅ נכון!'},{t:'📞 גיבוי והמתנה',c:false,f:'❌ קודם תמ"צ.'}]},
-{n:'📋 חומצה גופרתית — קורוזיבי, לא דליק. חילוץ 3.',q:'חליפה?',opts:[{t:'🔥 תקיפה',c:false,f:'❌ לדליקים.'},{t:'🛡️ התערבות מהירה',c:true,f:'✅ קורוזיבי + חילוץ = ERS.'},{t:'👕 בגד עבודה',c:false,f:'❌ חומצה = הגנה מלאה.'}]},
-{n:'🧥 בחרת ERS. מתמגן.',q:'ראשון?',opts:[{t:'👢 מגפיים',c:false,f:'❌ בדיקה ויזואלית!'},{t:'🔍 בדיקה ויזואלית',c:true,f:'✅ תמיד קודם!'},{t:'😷 מסיכה',c:false,f:'❌ מסיכה מאוחר.'}]},
-{n:'✅ רגליים, שרוולים, מגפיים, הרעפה. עכשיו מסיכה.',q:'סוג מסיכה?',opts:[{t:'קליפס',c:false,f:'❌ אסור!'},{t:'רצועות',c:true,f:'✅ כלל ברזל.'},{t:'כל סוג',c:false,f:'❌ רק רצועות.'}]},
-{n:'😷 התמגנות הושלמה. איש צוות בודק.',q:'מה בודק?',opts:[{t:'רוכסן בלבד',c:false,f:'❌ 6 פרמטרים!'},{t:'אטימה, רוכסן, הרעפה, כפפות, קשר, לחץ',c:true,f:'✅ בדיקה מקיפה.'},{t:'קסדה בלבד',c:false,f:'❌ 6 פרמטרים.'}]},
-{n:'🏃 חילוץ מוצלח! 3 ניצלו. חוזר לקר.',q:'לפני הפשטה?',opts:[{t:'להוריד',c:false,f:'❌ שטיפה!'},{t:'שטיפה + נעליים',c:true,f:'✅ שטיפה + נעליים בסמיכות.'},{t:'המתנה',c:false,f:'❌ שטיפה פעילה.'}]}
+{narration:'🚨 דליפת חומצה גופרתית (1830) מכביש 4. רוח מערבית 15 קמ"ש. 3 נפגעים.',q:'פעולה ראשונה?',opts:[{t:'🏃 לרוץ להציל',correct:false,fb:'❌ בלי מיגון! קודם תמ"צ.'},{t:'📋 תמ"צ + מידע',correct:true,fb:'✅ נכון!'},{t:'📞 גיבוי והמתנה',correct:false,fb:'❌ קודם תמ"צ.'}]},
+{narration:'📋 חומצה גופרתית — קורוזיבי, לא דליק. חילוץ 3.',q:'חליפה?',opts:[{t:'🔥 תקיפה',correct:false,fb:'❌ לדליקים.'},{t:'🛡️ התערבות מהירה',correct:true,fb:'✅ קורוזיבי + חילוץ = ERS.'},{t:'👕 בגד עבודה',correct:false,fb:'❌ חומצה = הגנה מלאה.'}]},
+{narration:'🧥 בחרת ERS. מתמגן.',q:'ראשון?',opts:[{t:'👢 מגפיים',correct:false,fb:'❌ בדיקה ויזואלית!'},{t:'🔍 בדיקה ויזואלית',correct:true,fb:'✅ תמיד קודם!'},{t:'😷 מסיכה',correct:false,fb:'❌ מסיכה מאוחר.'}]},
+{narration:'✅ רגליים, שרוולים, מגפיים, הרעפה. עכשיו מסיכה.',q:'סוג מסיכה?',opts:[{t:'קליפס',correct:false,fb:'❌ אסור!'},{t:'רצועות',correct:true,fb:'✅ כלל ברזל.'},{t:'כל סוג',correct:false,fb:'❌ רק רצועות.'}]},
+{narration:'😷 התמגנות הושלמה. איש צוות בודק.',q:'מה בודק?',opts:[{t:'רוכסן בלבד',correct:false,fb:'❌ 6 פרמטרים!'},{t:'אטימה, רוכסן, הרעפה, כפפות, קשר, לחץ',correct:true,fb:'✅ בדיקה מקיפה.'},{t:'קסדה בלבד',correct:false,fb:'❌ 6 פרמטרים.'}]},
+{narration:'🏃 חילוץ מוצלח! 3 ניצלו. חוזר לקר.',q:'לפני הפשטה?',opts:[{t:'להוריד',correct:false,fb:'❌ שטיפה!'},{t:'שטיפה + נעליים',correct:true,fb:'✅ שטיפה + נעליים בסמיכות.'},{t:'המתנה',correct:false,fb:'❌ שטיפה פעילה.'}]}
 ],en:[
-{n:'🚨 Sulfuric acid leak (UN 1830) Route 4. Wind W 15km/h. 3 casualties.',q:'First action?',opts:[{t:'🏃 Run to rescue',c:false,f:'❌ No protection! Assessment first.'},{t:'📋 Assess + gather info',c:true,f:'✅ Correct!'},{t:'📞 Backup & wait',c:false,f:'❌ Assessment first.'}]},
-{n:'📋 Sulfuric acid — corrosive, not flammable. Rescue 3.',q:'Which suit?',opts:[{t:'🔥 Assault',c:false,f:'❌ For flammables.'},{t:'🛡️ LION ERS',c:true,f:'✅ Corrosive + rescue = ERS.'},{t:'👕 Work clothes',c:false,f:'❌ Acid = full protection.'}]},
-{n:'🧥 Chose ERS. Donning.',q:'First?',opts:[{t:'👢 Boots',c:false,f:'❌ Visual inspection!'},{t:'🔍 Visual inspection',c:true,f:'✅ Always first!'},{t:'😷 Mask',c:false,f:'❌ Mask later.'}]},
-{n:'✅ Legs, sleeves, boots, tuck. Now mask.',q:'Mask type?',opts:[{t:'Clip-on',c:false,f:'❌ Prohibited!'},{t:'Strap-on',c:true,f:'✅ Iron rule.'},{t:'Any',c:false,f:'❌ Straps only.'}]},
-{n:'😷 Donning complete. Team member checks.',q:'Checks what?',opts:[{t:'Zipper only',c:false,f:'❌ 6 parameters!'},{t:'Seal, zip, tuck, gloves, radio, pressure',c:true,f:'✅ Full check.'},{t:'Helmet only',c:false,f:'❌ 6 parameters.'}]},
-{n:'🏃 Successful rescue! 3 saved. Back to cold zone.',q:'Before doffing?',opts:[{t:'Just remove',c:false,f:'❌ Must wash!'},{t:'Wash + arrange shoes',c:true,f:'✅ Wash first + shoes nearby.'},{t:'Wait 10 min',c:false,f:'❌ Active washing.'}]}
+{narration:'🚨 Sulfuric acid leak (UN 1830) Route 4. Wind W 15km/h. 3 casualties.',q:'First action?',opts:[{t:'🏃 Run to rescue',correct:false,fb:'❌ No protection! Assessment first.'},{t:'📋 Assess + gather info',correct:true,fb:'✅ Correct!'},{t:'📞 Backup & wait',correct:false,fb:'❌ Assessment first.'}]},
+{narration:'📋 Sulfuric acid — corrosive, not flammable. Rescue 3.',q:'Which suit?',opts:[{t:'🔥 Assault',correct:false,fb:'❌ For flammables.'},{t:'🛡️ LION ERS',correct:true,fb:'✅ Corrosive + rescue = ERS.'},{t:'👕 Work clothes',correct:false,fb:'❌ Acid = full protection.'}]},
+{narration:'🧥 Chose ERS. Donning.',q:'First?',opts:[{t:'👢 Boots',correct:false,fb:'❌ Visual inspection!'},{t:'🔍 Visual inspection',correct:true,fb:'✅ Always first!'},{t:'😷 Mask',correct:false,fb:'❌ Mask later.'}]},
+{narration:'✅ Legs, sleeves, boots, tuck. Now mask.',q:'Mask type?',opts:[{t:'Clip-on',correct:false,fb:'❌ Prohibited!'},{t:'Strap-on',correct:true,fb:'✅ Iron rule.'},{t:'Any',correct:false,fb:'❌ Straps only.'}]},
+{narration:'😷 Donning complete. Team member checks.',q:'Checks what?',opts:[{t:'Zipper only',correct:false,fb:'❌ 6 parameters!'},{t:'Seal, zip, tuck, gloves, radio, pressure',correct:true,fb:'✅ Full check.'},{t:'Helmet only',correct:false,fb:'❌ 6 parameters.'}]},
+{narration:'🏃 Successful rescue! 3 saved. Back to cold zone.',q:'Before doffing?',opts:[{t:'Just remove',correct:false,fb:'❌ Must wash!'},{t:'Wash + arrange shoes',correct:true,fb:'✅ Wash first + shoes nearby.'},{t:'Wait 10 min',correct:false,fb:'❌ Active washing.'}]}
 ],zh:[
-{n:'🚨 硫酸泄漏(UN 1830)4号公路。西风15km/h。3名伤员。',q:'第一步？',opts:[{t:'🏃 跑去救',c:false,f:'❌ 无防护！先评估。'},{t:'📋 评估+信息',c:true,f:'✅ 正确！'},{t:'📞 等增援',c:false,f:'❌ 先评估。'}]},
-{n:'📋 硫酸 — 腐蚀，非燃。救3人。',q:'哪种服？',opts:[{t:'🔥 进攻服',c:false,f:'❌ 用于易燃。'},{t:'🛡️ LION ERS',c:true,f:'✅ 腐蚀+救援=ERS。'},{t:'👕 工作服',c:false,f:'❌ 酸=全防护。'}]},
-{n:'🧥 选ERS。穿戴。',q:'第一步？',opts:[{t:'👢 靴子',c:false,f:'❌ 先目视检查！'},{t:'🔍 目视检查',c:true,f:'✅ 始终先检查！'},{t:'😷 面罩',c:false,f:'❌ 面罩在后。'}]},
-{n:'✅ 腿、袖、靴、套叠完成。面罩。',q:'面罩类型？',opts:[{t:'卡扣',c:false,f:'❌ 禁止！'},{t:'系带',c:true,f:'✅ 铁律。'},{t:'任何',c:false,f:'❌ 仅系带。'}]},
-{n:'😷 穿戴完成。队员检查。',q:'检查什么？',opts:[{t:'仅拉链',c:false,f:'❌ 6项！'},{t:'密封、拉链、套叠、手套、通讯、气压',c:true,f:'✅ 全面检查。'},{t:'仅头盔',c:false,f:'❌ 6项。'}]},
-{n:'🏃 救援成功！3人获救。回冷区。',q:'脱卸前？',opts:[{t:'直接脱',c:false,f:'❌ 要洗！'},{t:'洗服+备鞋',c:true,f:'✅ 先洗+备鞋。'},{t:'等10分',c:false,f:'❌ 主动清洗。'}]}
+{narration:'🚨 硫酸泄漏(UN 1830)4号公路。西风15km/h。3名伤员。',q:'第一步？',opts:[{t:'🏃 跑去救',correct:false,fb:'❌ 无防护！先评估。'},{t:'📋 评估+信息',correct:true,fb:'✅ 正确！'},{t:'📞 等增援',correct:false,fb:'❌ 先评估。'}]},
+{narration:'📋 硫酸 — 腐蚀，非燃。救3人。',q:'哪种服？',opts:[{t:'🔥 进攻服',correct:false,fb:'❌ 用于易燃。'},{t:'🛡️ LION ERS',correct:true,fb:'✅ 腐蚀+救援=ERS。'},{t:'👕 工作服',correct:false,fb:'❌ 酸=全防护。'}]},
+{narration:'🧥 选ERS。穿戴。',q:'第一步？',opts:[{t:'👢 靴子',correct:false,fb:'❌ 先目视检查！'},{t:'🔍 目视检查',correct:true,fb:'✅ 始终先检查！'},{t:'😷 面罩',correct:false,fb:'❌ 面罩在后。'}]},
+{narration:'✅ 腿、袖、靴、套叠完成。面罩。',q:'面罩类型？',opts:[{t:'卡扣',correct:false,fb:'❌ 禁止！'},{t:'系带',correct:true,fb:'✅ 铁律。'},{t:'任何',correct:false,fb:'❌ 仅系带。'}]},
+{narration:'😷 穿戴完成。队员检查。',q:'检查什么？',opts:[{t:'仅拉链',correct:false,fb:'❌ 6项！'},{t:'密封、拉链、套叠、手套、通讯、气压',correct:true,fb:'✅ 全面检查。'},{t:'仅头盔',correct:false,fb:'❌ 6项。'}]},
+{narration:'🏃 救援成功！3人获救。回冷区。',q:'脱卸前？',opts:[{t:'直接脱',correct:false,fb:'❌ 要洗！'},{t:'洗服+备鞋',correct:true,fb:'✅ 先洗+备鞋。'},{t:'等10分',correct:false,fb:'❌ 主动清洗。'}]}
 ]},
 sim_done:{he:['כל הכבוד!','הסימולציה הושלמה בהצלחה.'],en:['Great job!','Simulation completed successfully.'],zh:['做得好！','模拟成功完成。']},
 sim_btns:{he:['המשך ←','סיום 🎉','🔄 התחל מחדש'],en:['Continue ←','Finish 🎉','🔄 Start Over'],zh:['继续 ←','完成 🎉','🔄 重新开始']},
