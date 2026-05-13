@@ -278,4 +278,5 @@ function loadQ(){const q=Qs[cq];document.getElementById('quizProg').textContent=
 function pickA(i,b){if(ans)return;ans=true;const q=Qs[cq];const all=document.querySelectorAll('.quiz-opt');if(i===q.c){b.classList.add('correct');sc++;snd('ok');document.getElementById('quizF').innerHTML='<span style="color:var(--green)">✅ '+q.e+'</span>'}else{b.classList.add('wrong');all[q.c].classList.add('correct');snd('err');document.getElementById('quizF').innerHTML='<span style="color:var(--fire)">❌ '+q.e+'</span>'}if(cq<Qs.length-1)document.getElementById('quizNext').style.display='inline-flex';else{document.getElementById('quizRestart').style.display='inline-flex';document.getElementById('quizScore').style.display='block';const p=Math.round(sc/Qs.length*100);document.getElementById('sVal').textContent=sc+'/'+Qs.length;document.getElementById('sLabel').textContent=p>=80?'מצוין!':p>=60?'לא רע':' חזור על החומר';snd('done');addScore(sc*10,'quiz');if(p>=80)confetti()}}
 function nextQ(){cq++;loadQ();snd('tick')}function restartQ(){cq=0;sc=0;loadQ()}loadQ();
 </script>
+<script src="i18n.js"></script>
 </body></html>
