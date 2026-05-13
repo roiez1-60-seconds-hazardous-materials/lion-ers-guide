@@ -224,8 +224,20 @@ function setLang(lang){
     if(note&&T.don_notes[i+5])note.textContent=T.don_notes[i+5][L];
   });
   
-  // DONNING TABS
-  document.querySelectorAll('#donning .tabs .tab-btn').forEach((b,i)=>{if(T.don_tabs[L][i])b.textContent=T.don_tabs[L][i]});
+  // ALL TABS — by onclick target
+  document.querySelectorAll('.tab-btn').forEach(b=>{
+    const oc=b.getAttribute('onclick')||'';
+    if(oc.includes("don-prep"))b.textContent=T.don_tabs[L][0];
+    else if(oc.includes("don-steps"))b.textContent=T.don_tabs[L][1];
+    else if(oc.includes("don-check"))b.textContent=T.don_tabs[L][2];
+    else if(oc.includes("m-clean"))b.textContent=T.maint_tabs[L][0];
+    else if(oc.includes("m-inspect"))b.textContent=T.maint_tabs[L][1];
+    else if(oc.includes("m-fold"))b.textContent=T.maint_tabs[L][2];
+    else if(oc.includes("m-schedule"))b.textContent=T.maint_tabs[L][3];
+    else if(oc.includes("q-quiz"))b.textContent=T.quiz_tabs[L][0];
+    else if(oc.includes("q-flash"))b.textContent=T.quiz_tabs[L][1];
+    else if(oc.includes("q-drag"))b.textContent=T.quiz_tabs[L][2];
+  });
   
   // DONNING TIMER
   const donSec=document.getElementById('donning');
@@ -280,12 +292,10 @@ function setLang(lang){
   if(typeof simScenes!=='undefined')window.simScenes=T.simScenes[L];
   
   // MAINTENANCE TABS
-  document.querySelectorAll('#maintenance .tabs .tab-btn').forEach((b,i)=>{if(T.maint_tabs[L][i])b.textContent=T.maint_tabs[L][i]});
   
   // QUIZ SECTION
   const quizSec=document.getElementById('quiz');
   if(quizSec){
-    quizSec.querySelectorAll('.tabs .tab-btn').forEach((b,i)=>{if(T.quiz_tabs[L][i])b.textContent=T.quiz_tabs[L][i]});
     quizSec.querySelectorAll('.score-label').forEach((el,i)=>{el.textContent=T.score_labels[L][i]});
     const nb=document.getElementById('quizNext');if(nb)nb.textContent=T.quiz_btns[L][0];
     const rb=document.getElementById('quizRestart');if(rb)rb.textContent=T.quiz_btns[L][1];
