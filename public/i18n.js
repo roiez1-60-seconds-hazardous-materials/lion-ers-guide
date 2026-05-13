@@ -117,7 +117,49 @@ quiz_progress:{he:['שאלה','מתוך'],en:['Question','of'],zh:['问题','共
 quiz_score:{he:['מצוין!','לא רע','חזור על החומר'],en:['Excellent!','Not bad','Review material'],zh:['优秀！','还行','复习材料']},
 flash_ui:{he:['לחץ להפוך','כל הכבוד!','🔄 ערבב מחדש','הבא ←'],en:['Click to flip','Well done!','🔄 Shuffle','Next ←'],zh:['点击翻转','做得好！','🔄 重新洗牌','下一 ←']},
 drag_ui:{he:['✓ בדוק סדר','↺ אפס','🎉 מושלם!'],en:['✓ Check Order','↺ Reset','🎉 Perfect!'],zh:['✓ 检查','↺ 重置','🎉 完美！']},
-footer:{he:['כבאות והצלה לישראל — אגף המבצעים | חטיבת תוה"ד','ס/טפסר רועי צוקרמן, רע"ן חומ"ס ארצי'],en:['Israel Fire & Rescue — Operations Division','S/Sgt Roie Zukerman, National HazMat Officer'],zh:['以色列消防救援 — 作战部','高级中士 Roie Zukerman，国家危险品官员']}
+footer:{he:['כבאות והצלה לישראל — אגף המבצעים | חטיבת תוה"ד','ס/טפסר רועי צוקרמן, רע"ן חומ"ס ארצי'],en:['Israel Fire & Rescue — Operations Division','S/Sgt Roie Zukerman, National HazMat Officer'],zh:['以色列消防救援 — 作战部','高级中士 Roie Zukerman，国家危险品官员']},
+// --- OVERVIEW CONTENT ---
+ov:{
+purpose_t:{he:'ייעוד החליפה',en:'Suit Purpose',zh:'用途'},
+purpose_d:{he:'חליפת LION ERS מספקת הגנה בשני תרחישים:<br><br><strong style="color:var(--fire)">משימות קצרות באזור החם:</strong> הצלת לכודים (Scoop &amp; Run), ייצוב מצב.<br><strong style="color:var(--amber)">פעולות ממושכות באזור הפושר:</strong> שטיפת צוותים, ניטור.',en:'LION ERS provides protection in two scenarios:<br><br><strong style="color:var(--fire)">Short missions in Hot Zone:</strong> Casualty rescue (Scoop &amp; Run), stabilization.<br><strong style="color:var(--amber)">Extended in Warm Zone:</strong> Decon, monitoring.',zh:'LION ERS在两种场景中提供保护：<br><br><strong style="color:var(--fire)">热区短任务：</strong>伤员救援，稳定。<br><strong style="color:var(--amber)">温区长作业：</strong>洗消、监测。'},
+prov_h:{he:'✅ מה מספקת',en:'✅ What it provides',zh:'✅ 提供保护'},
+prov_l:{he:['הגנה מפני אדים וגזים רעילים/קורוזיביים','הגנה מפני התזת נוזלים','הגנה כימית ומכנית לכפות הידיים','נידוף זיעה (<200 W/m²)','התמגנות והפשטה עצמית'],en:['Protection from toxic/corrosive vapors & gases','Liquid splash protection','Chemical & mechanical hand protection','Sweat evaporation (<200 W/m²)','Self donning & doffing'],zh:['防毒/腐蚀蒸气和气体','防液体飞溅','手部化学和机械保护','排汗 (<200 W/m²)','可自行穿脱']},
+not_h:{he:'🚫 לא מיועדת ל:',en:'🚫 NOT for:',zh:'🚫 不适用于：'},
+not_l:{he:['גזים/נוזלים דליקים','אש פעילה או להבות','מגע ישיר עם חום/מתכת מותכת','בידוד חשמל','חומר רדיואקטיבי'],en:['Flammable gases/liquids','Active fire or flames','Direct heat/molten metal contact','Electrical insulation','Radioactive materials'],zh:['易燃气体/液体','明火或火焰','直接接触高温/熔融金属','电气绝缘','放射性物质']},
+std_h:{he:'📋 תקנים',en:'📋 Standards',zh:'📋 标准'},
+std_d:{he:'<strong>NFPA 1992</strong> — הגנה מהתזת נוזלים כימיים.<br><strong>NFPA 1994 Class 3</strong> — הגנה מאדים, גזים, חלקיקים, כולל טרור כימי-ביולוגי.',en:'<strong>NFPA 1992</strong> — Chemical liquid splash protection.<br><strong>NFPA 1994 Class 3</strong> — Vapor, gas & particle protection, incl. CBRN.',zh:'<strong>NFPA 1992</strong> — 化学液体飞溅防护。<br><strong>NFPA 1994 Class 3</strong> — 蒸气、气体、颗粒防护，含CBRN。'},
+dl:{he:'📥 מדריך כיס',en:'📥 Pocket Guide',zh:'📥 口袋指南'},
+vid:{he:'סרטון הדרכה',en:'Training Video',zh:'培训视频'}
+},
+// --- COMPONENTS CONTENT ---
+cmp:{
+warn_h:{he:'⚠️ שימו לב',en:'⚠️ Important',zh:'⚠️ 注意'},
+warn_l:{he:['אין מסיכה עם קליפס — רק רצועות','חובה שני סוגי כפפות','הסירו תכשיטים ופריטים אישיים'],en:['No clip mask — straps only','Both glove types required','Remove jewelry & personal items'],zh:['禁卡扣面罩 — 仅系带','必须双层手套','取下首饰']},
+hint:{he:'💡 לחץ על כל רכיב בתמונה לפרטים',en:'💡 Click any component for details',zh:'💡 点击查看详情'}
+},
+// --- MAINTENANCE CONTENT ---
+mt:{
+cln_t:{he:'ניקוי',en:'Cleaning',zh:'清洁'},
+cln_d:{he:'<strong>לאחר שימוש:</strong> מים + סבון עדין, אח"כ מים בלבד.<br><strong>ייבוש:</strong> לא תחת שמש ישירה.<br><strong>אחרי:</strong> קפל → תיק.',en:'<strong>After use:</strong> Water + mild soap, then water only.<br><strong>Drying:</strong> Not in direct sunlight.<br><strong>After:</strong> Fold → bag.',zh:'<strong>使用后：</strong>水+温和肥皂，然后仅水。<br><strong>干燥：</strong>不可直晒。<br><strong>之后：</strong>折叠→装袋。'},
+no_h:{he:'🚫 אסור',en:'🚫 Prohibited',zh:'🚫 禁止'},
+no_l:{he:['מי חמצן','שמש ישירה בייבוש'],en:['Hydrogen peroxide','Direct sunlight during drying'],zh:['双氧水','干燥时直晒']},
+str_t:{he:'אחסון',en:'Storage',zh:'存储'},
+str_d:{he:'בשקית, מוצל, ~21°C, לחות 40%.',en:'In bag, shaded, ~21°C, 40% humidity.',zh:'装袋，阴凉，~21°C，湿度40%。'},
+ins:{he:['הנח על משטח חלק ומואר','בדיקה חיצונית ופנימית','חיפוש: חתכים, חורים, קרעים, שינוי צבע','בדיקת רוכסן','חוטים רופפים?','פגם → פנה לספק'],en:['Place on smooth lit surface','External & internal inspection','Look for: cuts, holes, tears, discoloration','Check zipper','Loose threads?','Defect → contact supplier'],zh:['放光滑明亮处','内外检查','查：切口、孔洞、撕裂、变色','检查拉链','松线头？','缺陷→联系供应商']},
+ins_d:{he:'הפוך חליפה, ברדס, כפפות, גרביים. אין להפוך בטנת כפפה.',en:'Invert suit, hood, gloves, socks. Do NOT invert glove liner.',zh:'翻转服、罩、手套、袜。不可翻内衬。'},
+fld:{he:['פרוס — צד חיצוני למעלה','סגור רוכסן + כיסוי','קפל לאורך — ימין על שמאל','שרוולים אקורדיון','גלגל מגרביים לכובע','החזר לשקית'],en:['Spread — outer side up','Close zipper + cover','Fold lengthwise — right over left','Accordion sleeves','Roll socks to hood','Return to bag'],zh:['展开 — 外侧朝上','关拉链+盖板','纵向折 — 右叠左','风琴袖','从袜卷至罩','放回袋']},
+sch:{he:['לאחר קבלה מיצרן','לאחר אירוע חומ"ס','1 בכל חודש','לאחר שטיפה וייבוש'],en:['After receiving from manufacturer','After HazMat incident','1st of every month','After washing & drying'],zh:['从制造商接收后','危险品事件后','每月1日','清洗干燥后']},
+log:{he:'📝 נהל מעקב: זמן, שטיפות, בדיקות — לכל חיי החליפה.',en:'📝 Track: time, washes, inspections — for suit lifetime.',zh:'📝 记录：时间、清洗、检查 — 贯穿寿命。'}
+},
+// --- SAFETY CONTENT ---
+sf:{
+thr_t:{he:'סף שימוש',en:'Usage Threshold',zh:'使用阈值'},
+thr_d:{he:'<span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">24</span> שעות <span style="color:var(--warm-300)">או</span> <span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">3</span> שטיפות<br><span style="font-size:12px;color:var(--warm-500)">הראשון מביניהם</span>',en:'<span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">24</span> hours <span style="color:var(--warm-300)">or</span> <span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">3</span> washes<br><span style="font-size:12px;color:var(--warm-500)">whichever comes first</span>',zh:'<span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">24</span> 小时 <span style="color:var(--warm-300)">或</span> <span style="font-family:\'Frank Ruhl Libre\',serif;font-size:36px;font-weight:900;color:var(--fire)">3</span> 次清洗<br><span style="font-size:12px;color:var(--warm-500)">以先到者为准</span>'},
+pro_h:{he:'🚫 איסורי שימוש',en:'🚫 Prohibited Uses',zh:'🚫 禁止使用'},
+pro_l:{he:['אש פעילה / להבות / קרינה תרמית','גזים/נוזלים דליקים','מגע חום/מתכת מותכת (כפפות)','בידוד חשמל (כפפות)','חומר רדיואקטיבי (כפפות)','חליפה שלא נשטפה/נבדקה/התייבשה'],en:['Active fire / flames / thermal radiation','Flammable gases/liquids','Heat/molten metal contact (gloves)','Electrical insulation (gloves)','Radioactive materials (gloves)','Unwashed/uninspected/undried suit'],zh:['明火/火焰/热辐射','易燃气体/液体','接触高温/熔融金属（手套）','电气绝缘（手套）','放射性物质（手套）','未洗/检/干的服']},
+},
+// --- DOFF WARN TITLE ---
+doff_warn_h:{he:'⚠️ טרם ההפשטה',en:'⚠️ Before Doffing',zh:'⚠️ 脱卸前'}
 };// end T
 
 // ============================================================
@@ -250,6 +292,62 @@ function setLang(lang){
   try{if(typeof loadQ==='function'){cq=0;sc=0;ans=false;loadQ()}}catch(e){}
   try{if(typeof initFlashcards==='function')initFlashcards()}catch(e){}
   try{if(typeof initDrag==='function')initDrag()}catch(e){}
+  
+  // --- OVERVIEW CONTENT ---
+  const ov=document.getElementById('overview');
+  if(ov){
+    const cards=ov.querySelectorAll('.card-title');if(cards[0])cards[0].textContent=T.ov.purpose_t[L];
+    const texts=ov.querySelectorAll('.card-text');if(texts[0])texts[0].innerHTML=T.ov.purpose_d[L];
+    const alerts=ov.querySelectorAll('.alert');
+    if(alerts[0]){alerts[0].querySelector('h4').innerHTML=T.ov.prov_h[L];alerts[0].querySelectorAll('li').forEach((li,i)=>{if(T.ov.prov_l[L][i])li.textContent=T.ov.prov_l[L][i]})}
+    if(alerts[1]){alerts[1].querySelector('h4').innerHTML=T.ov.not_h[L];alerts[1].querySelectorAll('li').forEach((li,i)=>{if(T.ov.not_l[L][i])li.textContent=T.ov.not_l[L][i]})}
+    if(alerts[2]){alerts[2].querySelector('h4').innerHTML=T.ov.std_h[L];const sp=alerts[2].querySelector('p');if(sp)sp.innerHTML=T.ov.std_d[L]}
+    const dlBtn=ov.querySelector('.btn-fire');if(dlBtn&&dlBtn.hasAttribute('download'))dlBtn.textContent=T.ov.dl[L];
+    if(cards[1])cards[1].textContent=T.ov.vid[L];
+  }
+  
+  // --- COMPONENTS CONTENT ---
+  const cmpSec=document.getElementById('components');
+  if(cmpSec){
+    const hint=cmpSec.querySelector('p[style*="center"]');if(hint)hint.innerHTML=T.cmp.hint[L];
+    const alert=cmpSec.querySelector('.alert');
+    if(alert){alert.querySelector('h4').innerHTML=T.cmp.warn_h[L];alert.querySelectorAll('li').forEach((li,i)=>{if(T.cmp.warn_l[L][i])li.textContent=T.cmp.warn_l[L][i]})}
+  }
+  
+  // --- MAINTENANCE CONTENT ---
+  const mtSec=document.getElementById('maintenance');
+  if(mtSec){
+    // Cleaning tab
+    const clnCards=mtSec.querySelectorAll('#m-clean .card-title');
+    if(clnCards[0])clnCards[0].textContent=T.mt.cln_t[L];
+    const clnTexts=mtSec.querySelectorAll('#m-clean .card-text');
+    if(clnTexts[0])clnTexts[0].innerHTML=T.mt.cln_d[L];
+    if(clnCards[1])clnCards[1].textContent=T.mt.str_t[L];
+    if(clnTexts[1])clnTexts[1].textContent=T.mt.str_d[L];
+    const noAlert=mtSec.querySelector('#m-clean .alert');
+    if(noAlert){noAlert.querySelector('h4').innerHTML=T.mt.no_h[L];noAlert.querySelectorAll('li').forEach((li,i)=>{if(T.mt.no_l[L][i])li.textContent=T.mt.no_l[L][i]})}
+    // Inspection tab
+    mtSec.querySelectorAll('#m-inspect .maint-title').forEach((el,i)=>{if(T.mt.ins[L][i])el.textContent=T.mt.ins[L][i]});
+    const insDesc=mtSec.querySelector('#m-inspect .maint-desc');if(insDesc)insDesc.textContent=T.mt.ins_d[L];
+    // Fold tab
+    mtSec.querySelectorAll('#m-fold .maint-title').forEach((el,i)=>{if(T.mt.fld[L][i])el.textContent=T.mt.fld[L][i]});
+    // Schedule tab
+    mtSec.querySelectorAll('#m-schedule .maint-title').forEach((el,i)=>{if(T.mt.sch[L][i])el.textContent=T.mt.sch[L][i]});
+    const logP=mtSec.querySelector('#m-schedule .alert p');if(logP)logP.textContent=T.mt.log[L];
+  }
+  
+  // --- SAFETY CONTENT ---
+  const sfSec=document.getElementById('safety');
+  if(sfSec){
+    const ct=sfSec.querySelector('.card-title');if(ct)ct.textContent=T.sf.thr_t[L];
+    const ctext=sfSec.querySelector('.card-text');if(ctext)ctext.innerHTML=T.sf.thr_d[L];
+    const alert=sfSec.querySelector('.alert');
+    if(alert){alert.querySelector('h4').innerHTML=T.sf.pro_h[L];alert.querySelectorAll('li').forEach((li,i)=>{if(T.sf.pro_l[L][i])li.textContent=T.sf.pro_l[L][i]})}
+  }
+  
+  // --- DOFFING WARN TITLE ---
+  const doffAlert=document.querySelector('#doffing .alert h4');
+  if(doffAlert)doffAlert.innerHTML=T.doff_warn_h[L];
   
   // FOOTER
   const ft=document.querySelector('.footer');
