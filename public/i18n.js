@@ -281,7 +281,13 @@ function setLang(lang){
     quizSec.querySelectorAll('.score-label').forEach((el,i)=>{el.textContent=T.score_labels[L][i]});
     const nb=document.getElementById('quizNext');if(nb)nb.textContent=T.quiz_btns[L][0];
     const rb=document.getElementById('quizRestart');if(rb)rb.textContent=T.quiz_btns[L][1];
+    const fh=quizSec.querySelector('#q-flash > p');if(fh)fh.textContent={he:'לחץ על הכרטיס כדי לגלות את התשובה',en:'Click the card to reveal the answer',zh:'点击卡片查看答案'}[L];
+    const fShuf=quizSec.querySelector('#q-flash .btn-outline');if(fShuf)fShuf.textContent=T.flash_ui[L][2];
+    const dh=quizSec.querySelector('#q-drag > p');if(dh)dh.textContent={he:'סדר את שלבי ההתמגנות בסדר הנכון — גרור ושחרר',en:'Arrange donning steps in correct order — drag & drop',zh:'将穿戴步骤按正确顺序排列 — 拖放'}[L];
+    const dBtns=quizSec.querySelectorAll('#q-drag .btn');if(dBtns[0])dBtns[0].textContent=T.drag_ui[L][0];if(dBtns[1])dBtns[1].textContent=T.drag_ui[L][1];
   }
+  const dchk=document.querySelector('#don-check .card-title');
+  if(dchk)dchk.textContent={he:'בדיקה סופית',en:'Final Check',zh:'最终检查'}[L];
   
   // Override quiz data
   if(typeof Qs!=='undefined')window.Qs=T.quizData[L];
